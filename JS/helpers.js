@@ -5,7 +5,7 @@ let getRandomnumber = size=> {
 let getDistance = (e, target) => {
     let diffX= e.offsetX - target.x;
     let diffY= e.offsetY - target.y;
-    return Math.sqrt(diffX * diffX) + (diffY + diffY);
+    return Math.sqrt(diffX * diffX) + (diffY * diffY);
 }
 
 let getDistanceHint = distance => {
